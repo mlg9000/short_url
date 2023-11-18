@@ -24,7 +24,7 @@ podman run --name short_url_app -p 5000:5000 localhost/short_url_app
 
 An automated test script is provided in `./tests`. The only requirements to run it are that Python 3 and `requests` are installed on the system.
 
-Run with the default `base_url` (http://127.0.0.1:5000). This can be overridden by supplying the `--base_url` argument.
+It runs with the default `base_url` set to (http://127.0.0.1:5000). This can be overridden by supplying the `--base_url` argument.
 
 Default example:
 
@@ -52,5 +52,4 @@ Valid test example for the `/decode` endpoint (will return something if there's 
 
 ```bash
 curl -X POST -H 'Content-type: application/json' --data '{"short_url": "http://smallurl/0"}' http://localhost:5000/decode
-```
 ```
